@@ -64,15 +64,521 @@
     </div>
 
 
-    <main>
+    <main class="pagina-campeones">
 
-        <section class="pagina-en-proceso">
+        <!-- ===== INTRODUCCION CAMPEONES ===== -->
 
-            <h2>Sección en desarrollo</h2>
+        <section class="historia-seccion" id="campeones-introduccion">
+        <h2>Los campeones del mundo</h2>
 
             <p>
-                El contenido de esta sección se encuentra en proceso.
+                Desde que <strong>Giuseppe “Nino” Farina</strong> conquistó el primer Campeonato Mundial en 1950 hasta la consagración de
+                <strong>Lando Norris</strong> en 2025, un total de <strong>35 pilotos diferentes</strong> alcanzaron el título máximo
+                de la Fórmula 1. Cada uno representa una etapa particular de la categoría:desde los arriesgados Grandes Premios de los años cincuenta hasta una actualidad
+                marcada por la tecnología, la estrategia y una preparación cada vez más profesional.
             </p>
+
+            <h4>De Fangio a las primeras grandes figuras</h4>
+
+            <p>
+                Durante las primeras décadas aparecieron algunos de los nombres que ayudaron a construir la historia del campeonato. <strong>Juan Manuel Fangio</strong>
+                dominó buena parte de los años cincuenta y estableció una referencia que perduraríadurante décadas. Más tarde surgieron campeones como
+                <strong>Jim Clark, Jack Brabham, Jackie Stewart y Niki Lauda</strong>,protagonistas de épocas en las que los autos evolucionaban rápidamente pero los
+                pilotos todavía competían en condiciones mucho más peligrosas que las actuales.Brabham alcanzó además un logro excepcional en 1966: fue campeón conduciendo
+                un automóvil construido por su propio equipo.
+            </p>
+
+            <h4>Rivalidades y épocas de dominio</h4>
+
+            <p>
+                Con el crecimiento de la categoría, el campeonato comenzó a estar marcado por grandes rivalidades y períodos de dominio. Los enfrentamientos entre
+                <strong>Alain Prost y Ayrton Senna</strong> definieron buena parte de finales de los años ochenta y comienzos de los noventa. Posteriormente,
+                <strong>Michael Schumacher</strong> encabezó junto a Ferrari uno de los ciclos más exitosos de la historia, mientras que décadas más tarde
+                <strong>Lewis Hamilton</strong> hizo lo propio durante el período de dominio de Mercedes. También hubo etapas protagonizadas por campeones consecutivos como
+                <strong>Sebastian Vettel</strong> y <strong>Max Verstappen</strong>.
+            </p>
+
+            <p>
+                Sin embargo, la historia del campeonato no está formada solamente por largas dinastías. Pilotos como <strong>James Hunt, Nigel Mansell, Kimi Räikkönen,
+                Jenson Button y Nico Rosberg</strong> consiguieron alcanzar la cima en temporadas que quedaron especialmente asociadas a sus nombres. El caso más singular es el de
+                <strong>Jochen Rindt</strong>, quien en 1970 se convirtió en el único piloto proclamado campeón mundial de Fórmula 1 de manera póstuma, después de perder la vida durante
+                los entrenamientos del Gran Premio de Italia.
+            </p>
+
+            <h4>Una historia que continúa</h4>
+
+            <p>
+                La galería de campeones refleja también la transformación de la propia Fórmula 1. Pilotos de distintas generaciones y nacionalidades compitieron con reglamentos,
+                tecnologías y niveles de seguridad muy diferentes, pero todos compartieron el mismo objetivo: terminar una temporada como <strong>campeón mundial de pilotos</strong>.
+                La siguiente imagen recorre cronológicamente a los ganadores de cada campeonato entre <strong>1950 y 2025</strong>, mostrando cómo esos nombres fueron sucediéndose a lo largo
+                de más de siete décadas de competición.
+            </p>
+
+            <div id="campeones-imagen">
+
+                <img
+                    src="../img/imagen_8.png"alt="Campeones mundiales de Fórmula 1 desde 1950 hasta 2025">
+
+            </div>
+
+        </section>
+
+
+        <!-- ===== MEDALLERO ===== -->
+
+        <section class="historia-seccion" id="campeones-medallero">
+
+            <h2>Medallero histórico de campeones</h2>
+
+            <p>
+                Ranking de campeones mundiales ordenado por cantidad de títulos
+                y, en caso de igualdad, por cantidad de Grandes Premios ganados.
+                Estadísticas actualizadas al cierre de la temporada 2025.
+            </p>
+
+          <table id="tabla-campeones">
+
+    <thead>
+
+        <tr>
+            <th>Posición</th>
+            <th>Piloto</th>
+            <th>Nacionalidad</th>
+            <th>Campeonatos</th>
+            <th>Carreras ganadas</th>
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        <tr class="oro">
+            <td>1.º</td>
+            <td>Lewis Hamilton</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/gb.svg"alt="Bandera del Reino Unido"><span>Reino Unido</span>
+                </div>
+            </td>
+            <td>7</td>
+            <td>105</td>
+        </tr>
+
+        <tr class="plata">
+            <td>2.º</td>
+            <td>Michael Schumacher</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/de.svg"alt="Bandera de Alemania"><span>Alemania</span>
+                </div>
+            </td>
+            <td>7</td>
+            <td>91</td>
+        </tr>
+
+        <tr class="bronce">
+            <td>3.º</td>
+            <td>Juan Manuel Fangio</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/ar.svg"alt="Bandera de Argentina"><span>Argentina</span>
+                </div>
+            </td>
+            <td>5</td>
+            <td>24</td>
+        </tr>
+
+        <tr>
+            <td>4.º</td>
+            <td>Max Verstappen</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/nl.svg"alt="Bandera de Países Bajos"><span>Países Bajos</span>
+                </div>
+            </td>
+            <td>4</td>
+            <td>71</td>
+        </tr>
+
+        <tr>
+            <td>5.º</td>
+            <td>Sebastian Vettel</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/de.svg"alt="Bandera de Alemania"><span>Alemania</span>
+                </div>
+            </td>
+            <td>4</td>
+            <td>53</td>
+        </tr>
+
+        <tr>
+            <td>6.º</td>
+            <td>Alain Prost</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/fr.svg"alt="Bandera de Francia"><span>Francia</span>
+                </div>
+            </td>
+            <td>4</td>
+            <td>51</td>
+        </tr>
+
+        <tr>
+            <td>7.º</td>
+            <td>Ayrton Senna</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/br.svg"alt="Bandera de Brasil"><span>Brasil</span>
+                </div>
+            </td>
+            <td>3</td>
+            <td>41</td>
+        </tr>
+
+        <tr>
+            <td>8.º</td>
+            <td>Jackie Stewart</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/gb.svg"alt="Bandera del Reino Unido"><span>Reino Unido</span>
+                </div>
+            </td>
+            <td>3</td>
+            <td>27</td>
+        </tr>
+
+        <tr>
+            <td>9.º</td>
+            <td>Niki Lauda</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/at.svg"alt="Bandera de Austria"><span>Austria</span>
+                </div>
+            </td>
+            <td>3</td>
+            <td>25</td>
+        </tr>
+
+        <tr>
+            <td>10.º</td>
+            <td>Nelson Piquet</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/br.svg"alt="Bandera de Brasil"><span>Brasil</span>
+                </div>
+            </td>
+            <td>3</td>
+            <td>23</td>
+        </tr>
+
+        <tr>
+            <td>11.º</td>
+            <td>Jack Brabham</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/au.svg"alt="Bandera de Australia"><span>Australia</span>
+                </div>
+            </td>
+            <td>3</td>
+            <td>14</td>
+        </tr>
+
+        <tr>
+            <td>12.º</td>
+            <td>Fernando Alonso</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/es.svg"alt="Bandera de España"><span>España</span>
+                </div>
+            </td>
+            <td>2</td>
+            <td>32</td>
+        </tr>
+
+        <tr>
+            <td>13.º</td>
+            <td>Jim Clark</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/gb.svg"alt="Bandera del Reino Unido"><span>Reino Unido</span>
+                </div>
+            </td>
+            <td>2</td>
+            <td>25</td>
+        </tr>
+
+        <tr>
+            <td>14.º</td>
+            <td>Mika Häkkinen</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/fi.svg"alt="Bandera de Finlandia"><span>Finlandia</span>
+                </div>
+            </td>
+            <td>2</td>
+            <td>20</td>
+        </tr>
+
+        <tr>
+            <td>15.º</td>
+            <td>Graham Hill</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/gb.svg"alt="Bandera del Reino Unido"><span>Reino Unido</span>
+                </div>
+            </td>
+            <td>2</td>
+            <td>14</td>
+        </tr>
+
+        <tr>
+            <td>15.º</td>
+            <td>Emerson Fittipaldi</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/br.svg"alt="Bandera de Brasil"><span>Brasil</span>
+                </div>
+            </td>
+            <td>2</td>
+            <td>14</td>
+        </tr>
+
+        <tr>
+            <td>17.º</td>
+            <td>Alberto Ascari</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/it.svg"alt="Bandera de Italia"><span>Italia</span>
+                </div>
+            </td>
+            <td>2</td>
+            <td>13</td>
+        </tr>
+
+        <tr>
+            <td>18.º</td>
+            <td>Nigel Mansell</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/gb.svg"alt="Bandera del Reino Unido"><span>Reino Unido</span>
+                </div>
+            </td>
+            <td>1</td>
+            <td>31</td>
+        </tr>
+
+        <tr>
+            <td>19.º</td>
+            <td>Nico Rosberg</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/de.svg"alt="Bandera de Alemania"><span>Alemania</span>
+                </div>
+            </td>
+            <td>1</td>
+            <td>23</td>
+        </tr>
+
+        <tr>
+            <td>20.º</td>
+            <td>Damon Hill</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/gb.svg"alt="Bandera del Reino Unido"><span>Reino Unido</span>
+                </div>
+            </td>
+            <td>1</td>
+            <td>22</td>
+        </tr>
+
+        <tr>
+            <td>21.º</td>
+            <td>Kimi Räikkönen</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/fi.svg"alt="Bandera de Finlandia"><span>Finlandia</span>
+                </div>
+            </td>
+            <td>1</td>
+            <td>21</td>
+        </tr>
+
+        <tr>
+            <td>22.º</td>
+            <td>Jenson Button</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/gb.svg"alt="Bandera del Reino Unido"><span>Reino Unido</span>
+                </div>
+            </td>
+            <td>1</td>
+            <td>15</td>
+        </tr>
+
+        <tr>
+            <td>23.º</td>
+            <td>Alan Jones</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/au.svg"alt="Bandera de Australia"><span>Australia</span>
+                </div>
+            </td>
+            <td>1</td>
+            <td>12</td>
+        </tr>
+
+        <tr>
+            <td>23.º</td>
+            <td>Mario Andretti</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/us.svg"alt="Bandera de Estados Unidos"><span>Estados Unidos</span>
+                </div>
+            </td>
+            <td>1</td>
+            <td>12</td>
+        </tr>
+
+        <tr>
+            <td>25.º</td>
+            <td>Jacques Villeneuve</td>
+            <td>
+                <div class="nacionalidad"><img class="bandera-pais"src="../img/banderas/ca.svg"alt="Bandera de Canadá"><span>Canadá</span>
+                </div>
+            </td>
+            <td>1</td>
+            <td>11</td>
+        </tr>
+
+        <tr>
+            <td>25.º</td>
+            <td>Lando Norris</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/gb.svg"alt="Bandera del Reino Unido"><span>Reino Unido</span>
+                </div>
+            </td>
+            <td>1</td>
+            <td>11</td>
+        </tr>
+
+        <tr>
+            <td>27.º</td>
+            <td>James Hunt</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/gb.svg" alt="Bandera del Reino Unido"><span>Reino Unido</span>
+                </div>
+            </td>
+            <td>1</td>
+            <td>10</td>
+        </tr>
+
+        <tr>
+            <td>27.º</td>
+            <td>Jody Scheckter</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/za.svg"alt="Bandera de Sudáfrica"><span>Sudáfrica</span>
+                </div>
+            </td>
+            <td>1</td>
+            <td>10</td>
+        </tr>
+
+        <tr>
+            <td>29.º</td>
+            <td>Denny Hulme</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/nz.svg"alt="Bandera de Nueva Zelanda"><span>Nueva Zelanda</span>
+                </div>
+            </td>
+            <td>1</td>
+            <td>8</td>
+        </tr>
+
+        <tr>
+            <td>30.º</td>
+            <td>John Surtees</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/gb.svg" alt="Bandera del Reino Unido">
+                    <span>Reino Unido</span>
+                </div>
+            </td>
+            <td>1</td>
+            <td>6</td>
+        </tr>
+
+        <tr>
+            <td>30.º</td>
+            <td>Jochen Rindt</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/at.svg"alt="Bandera de Austria">
+                    <span>Austria</span>
+                </div>
+            </td>
+            <td>1</td>
+            <td>6</td>
+        </tr>
+
+        <tr>
+            <td>32.º</td>
+            <td>Giuseppe Farina</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/it.svg"alt="Bandera de Italia">
+                    <span>Italia</span>
+                </div>
+            </td>
+            <td>1</td>
+            <td>5</td>
+        </tr>
+
+        <tr>
+            <td>32.º</td>
+            <td>Keke Rosberg</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/fi.svg"alt="Bandera de Finlandia">
+                    <span>Finlandia</span>
+                </div>
+            </td>
+            <td>1</td>
+            <td>5</td>
+        </tr>
+
+        <tr>
+            <td>34.º</td>
+            <td>Mike Hawthorn</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/gb.svg"alt="Bandera del Reino Unido">
+                    <span>Reino Unido</span>
+                </div>
+            </td>
+            <td>1</td>
+            <td>3</td>
+        </tr>
+
+        <tr>
+            <td>34.º</td>
+            <td>Phil Hill</td>
+            <td>
+                <div class="nacionalidad">
+                    <img class="bandera-pais"src="../img/banderas/us.svg"alt="Bandera de Estados Unidos"><span>Estados Unidos</span>
+                </div>
+            </td>
+            <td>1</td>
+            <td>3</td>
+        </tr>
+
+    </tbody>
+
+</table>
 
         </section>
 

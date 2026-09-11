@@ -171,6 +171,85 @@ main
 
 
 
+/* ===== PAGINA CAMPEONES ===== */
+
+
+/* ===== INTRODUCCION CAMPEONES ===== */
+
+#campeones-introduccion
+{
+    background-color: white;padding: 30px;margin-bottom: 30px;
+}
+
+#campeones-imagen
+{
+    margin-top: 25px;
+}
+
+#campeones-imagen img
+{
+    width: 100%;height: auto;display: block;
+}
+
+
+/* ===== MEDALLERO ===== */
+
+#campeones-medallero
+{
+    background-color: white;padding: 30px;
+}
+
+
+/* Tabla */
+
+#tabla-campeones
+{
+    width: 100%;border-collapse: collapse;margin-top: 20px;
+}
+
+
+#tabla-campeones th,
+#tabla-campeones td
+{
+    border: 1px solid #cccccc;padding: 10px;text-align: center;
+}
+
+
+#tabla-campeones th
+{
+    background-color: #1a1a1a;color: white;
+}
+
+
+/* Primer puesto */
+
+#tabla-campeones .oro
+{background-color: #f0d436;}
+
+
+/* Segundo puesto */
+
+#tabla-campeones .plata
+{background-color: #c0c0c0;}
+
+
+/* Tercer puesto */
+
+#tabla-campeones .bronce
+{background-color: #d88a3c;}
+
+/*  NACIONALIDAD CON BANDERA  */
+
+.nacionalidad
+{
+    display: flex;align-items: center;justify-content: center;gap: 8px;
+}
+
+.bandera-pais
+{
+    width: 28px;height: 18px;object-fit: cover;display: block;
+}
+
 
 
 
