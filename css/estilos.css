@@ -13,15 +13,9 @@ header
     background-color: #1a1a1a;color: white;text-align: center;padding: 20px;
 }
 
-header h1 
-{
-    margin: 0;
-}
+header h1 {margin: 0;}
 
-header p 
-{
-    margin-top: 10px;
-}
+header p {margin-top: 10px;}
 
 
 /* ===== MARCO BANDERA A CUADROS ===== */
@@ -104,9 +98,125 @@ main
     width: 100%; max-width: 560px;
 }
 
+
+/* ===== PAGINA HISTORIA ===== */
+
+/*  EXPANSION NACIMIENTO */
+.historia-seccion
+{background-color: white;padding: 30px;}
+
+/*  EXPANSION NACIMIENTO */
+#historia-nacimiento
+{
+    display: flex;gap: 35px;align-items: flex-start;background-color: white;padding: 30px;
+}
+
+#historia-nacimiento-texto{ width: 30%;}
+
+#historia-nacimiento-imagen
+{width: 65%;margin: 0;}
+
+#historia-nacimiento-imagen img
+{
+    width: 100%;height: auto;display: block;
+}
+
+
+#historia-nacimiento-imagen figcaption
+{
+    margin-top: 6px;font-style: italic;font-size: 0.9rem;text-align: center;
+}
+
+
+/*  EXPANSION INTERNACIONAL */
+
+#historia-expansion{margin-top: 30px;}
+
+
+#historia-expansion-titulo-imagenes
+{
+    font-style: italic;text-align: center; margin-top: 25px;margin-bottom: 10px;
+}
+
+
+#historia-expansion-imagenes
+{
+    display: flex; gap: 20px;
+}
+
+
+#historia-expansion-imagenes img
+{
+    width: 50%;height: 320px;object-fit: cover;display: block;
+}
+
+/* FORMULA 1 MODERNA */
+
+#historia-moderna
+{margin-top: 30px;}
+
+#historia-moderna-titulo-imagen
+{
+    margin-top: 30px;margin-bottom: 20px;text-align: center;font-size: 1.3rem;
+}
+
+#historia-moderna-imagen
+{text-align: center;}
+
+#historia-moderna-imagen img
+{
+    width: 100%;max-width: 850px;height: auto;display: block;margin: 0 auto;
+}
+
+
+
+
+
+
+
+
 /* ===== PIE DE PAGINA ===== */
 
-footer 
+
+footer
 {
-    background-color: #1a1a1a;color: white;text-align: center;padding: 20px;margin-top: 30px;
+    background-color: #1a1a1a;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 20px;
+    margin-top: 30px;
+}
+
+
+.footer-izquierda
+{
+    text-align: left;
+}
+
+
+.footer-izquierda p
+{
+    margin-top: 0;margin-bottom: 8px;
+}
+
+
+.footer-derecha
+{
+    text-align: right;
+}
+
+
+.footer-derecha p
+{
+    margin-top: 0; margin-bottom: 8px;
+}
+
+
+.footer-derecha img
+{
+    width: 310px;height: 45px;display: block;
 }
