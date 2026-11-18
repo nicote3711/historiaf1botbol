@@ -1,3 +1,181 @@
+/* ===== PERFIL ACTIVO GLOBAL ===== */
+
+header
+{
+    position: relative;
+}
+
+
+.perfil-global
+{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background-color: white;
+    padding: 8px 12px;
+
+    border: 2px solid #1a1a1a;
+}
+
+
+.perfil-global img
+{
+    width: 45px;
+    height: 35px;
+    object-fit: contain;
+}
+
+
+.perfil-global-datos
+{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+
+.perfil-global-datos strong
+{
+    font-size: 0.95rem;
+    color: #1a1a1a;
+}
+
+
+.perfil-global-datos span
+{
+    font-size: 0.8rem;
+    color: #555555;
+}
+
+/*  FONDOS */
+.fondo-mclaren
+{
+    background-color: #ffe5c2;
+}
+
+
+.fondo-ferrari
+{
+    background-color: #ffdada;
+}
+
+
+.fondo-redbull
+{
+    background-color: #dce3ff;
+}
+
+
+.fondo-mercedes
+{
+    background-color: #d5f5f2;
+}
+
+
+.fondo-astonmartin
+{
+    background-color: #d9eee9;
+}
+
+
+.fondo-alpine
+{
+    background-color: #dcefff;
+}
+
+
+.fondo-williams
+{
+    background-color: #dbe6ff;
+}
+
+
+.fondo-haas
+{
+    background-color: #e5e5e5;
+}
+
+
+.fondo-racingbulls
+{
+    background-color: #dfe6ff;
+}
+
+
+.fondo-sauber
+{
+    background-color: #dcf8dc;
+}
+
+
+.fondo-ferrari main
+{
+    background-color: #fff0f0;
+}
+
+
+.fondo-mclaren main
+{
+    background-color: #fff2df;
+}
+
+
+.fondo-mercedes main
+{
+    background-color: #eafaf8;
+}
+
+
+.fondo-redbull main
+{
+    background-color: #eef1ff;
+}
+
+
+.fondo-astonmartin main
+{
+    background-color: #edf7f4;
+}
+
+
+.fondo-alpine main
+{
+    background-color: #eef8ff;
+}
+
+
+.fondo-williams main
+{
+    background-color: #edf2ff;
+}
+
+
+.fondo-haas main
+{
+    background-color: #f3f3f3;
+}
+
+
+.fondo-racingbulls main
+{
+    background-color: #eef1ff;
+}
+
+
+.fondo-sauber main
+{
+    background-color: #effbef;
+}
+body,
+main
+{
+    transition: background-color 0.4s ease;
+}
 /* ===== ESTILOS GENERALES ===== */
 
 body 
@@ -298,4 +476,542 @@ footer
 .footer-derecha img
 {
     width: 310px;height: 45px;display: block;
+}
+
+
+
+/* ===== PAGINA MI PERFIL ===== */
+
+.perfil-seccion
+{
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-top: 6px solid #1a1a1a;
+}
+
+
+.perfil-formulario
+{
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.perfil-campo
+{
+    flex: 1;
+    min-width: 220px;
+}
+
+
+.perfil-campo label
+{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+
+.perfil-campo input,
+.perfil-campo select,
+.seleccion-perfil select
+{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.perfil-seccion button
+{
+    padding: 10px 18px;
+    border: none;
+    background-color: #1a1a1a;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.perfil-seccion button:hover
+{
+    background-color: #e10600;
+}
+
+
+.perfil-seccion button:disabled
+{
+    background-color: #999999;
+    cursor: default;
+}
+
+
+.seleccion-perfil
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+.seleccion-perfil select
+{
+    max-width: 300px;
+}
+
+
+.datos-perfil
+{
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f4f4f4;
+}
+
+
+.mensaje-error
+{
+    color: #b00020;
+    min-height: 18px;
+    font-size: 0.9rem;
+}
+
+
+.mensaje-informativo
+{
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+.preferencias-encabezado
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.logo-escuderia
+{
+    display: none;
+    max-width: 110px;
+    max-height: 70px;
+    object-fit: contain;
+}
+
+
+.logo-escuderia.visible
+{
+    display: block;
+}
+
+
+/* COLORES SEGUN ESCUDERIA */
+
+.tema-mclaren
+{
+    border-top-color: #ff8000;
+    background-color: #fff5e8;
+}
+
+
+.tema-ferrari
+{
+    border-top-color: #dc0000;
+    background-color: #fff0f0;
+}
+
+
+.tema-redbull
+{
+    border-top-color: #1e41ff;
+    background-color: #eef1ff;
+}
+
+
+.tema-mercedes
+{
+    border-top-color: #00a19c;
+    background-color: #eafafa;
+}
+
+
+.tema-astonmartin
+{
+    border-top-color: #006f62;
+    background-color: #edf7f5;
+}
+
+
+.tema-alpine
+{
+    border-top-color: #2293d1;
+    background-color: #eef8fd;
+}
+
+
+.tema-williams
+{
+    border-top-color: #005aff;
+    background-color: #edf3ff;
+}
+
+
+.tema-haas
+{
+    border-top-color: #b6babd;
+    background-color: #f4f4f4;
+}
+
+
+.tema-racingbulls
+{
+    border-top-color: #6692ff;
+    background-color: #f0f4ff;
+}
+
+
+.tema-sauber
+{
+    border-top-color: #52e252;
+    background-color: #efffef;
+}
+
+
+@media (max-width: 700px)
+{
+    .perfil-formulario
+    {
+        flex-direction: column;
+    }
+
+
+    .preferencias-encabezado
+    {
+        align-items: flex-start;
+    }
+
+
+    .logo-escuderia
+    {
+        max-width: 80px;
+    }
+}
+/* ===== FONDO GENERAL SEGUN ESCUDERIA ===== */
+
+body
+{
+    transition: background-color 0.4s ease;
+}
+
+
+.fondo-mclaren
+{
+    background-color: #fff8ef;
+}
+
+
+.fondo-ferrari
+{
+    background-color: #fff5f5;
+}
+
+
+.fondo-redbull
+{
+    background-color: #f4f6ff;
+}
+
+
+.fondo-mercedes
+{
+    background-color: #f1fbfa;
+}
+
+
+.fondo-astonmartin
+{
+    background-color: #f2f9f7;
+}
+
+
+.fondo-alpine
+{
+    background-color: #f3faff;
+}
+
+
+.fondo-williams
+{
+    background-color: #f3f7ff;
+}
+
+
+.fondo-haas
+{
+    background-color: #f7f7f7;
+}
+
+
+.fondo-racingbulls
+{
+    background-color: #f4f6ff;
+}
+
+
+.fondo-sauber
+{
+    background-color: #f3fff3;
+}
+/* ===== EFECTO DE ESCUDERIA EN TODA LA PAGINA MI PERFIL ===== */
+
+.fondo-mclaren .perfil-seccion
+{
+    background-color: #fffaf4;
+    border-top-color: #ff8000;
+}
+
+
+.fondo-ferrari .perfil-seccion
+{
+    background-color: #fff8f8;
+    border-top-color: #dc0000;
+}
+
+
+.fondo-redbull .perfil-seccion
+{
+    background-color: #f7f8ff;
+    border-top-color: #1e41ff;
+}
+
+
+.fondo-mercedes .perfil-seccion
+{
+    background-color: #f4fcfb;
+    border-top-color: #00a19c;
+}
+
+
+.fondo-astonmartin .perfil-seccion
+{
+    background-color: #f5faf8;
+    border-top-color: #006f62;
+}
+
+
+.fondo-alpine .perfil-seccion
+{
+    background-color: #f6fbfe;
+    border-top-color: #2293d1;
+}
+
+
+.fondo-williams .perfil-seccion
+{
+    background-color: #f6f9ff;
+    border-top-color: #005aff;
+}
+
+
+.fondo-haas .perfil-seccion
+{
+    background-color: #fafafa;
+    border-top-color: #b6babd;
+}
+
+
+.fondo-racingbulls .perfil-seccion
+{
+    background-color: #f7f8ff;
+    border-top-color: #6692ff;
+}
+
+
+.fondo-sauber .perfil-seccion
+{
+    background-color: #f6fff6;
+    border-top-color: #52e252;
+}
+
+
+
+/* ===== PAGINA CONTACTO ===== */
+
+.contacto-contenedor
+{
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+
+.contacto-seccion
+{
+    background-color: white;
+    padding: 30px;
+    flex: 1;
+    border-top: 6px solid #e10600;
+}
+
+
+.contacto-seccion h2
+{
+    margin-top: 0;
+}
+
+
+.contacto-datos
+{
+    margin-top: 30px;
+    font-style: normal;
+}
+
+
+.contacto-datos h3
+{
+    margin-bottom: 8px;
+}
+
+
+.contacto-datos a
+{
+    color: #005ae1;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.contacto-datos a:hover
+{
+    text-decoration: underline;
+}
+
+
+/* REDES SOCIALES */
+
+.contacto-redes
+{
+    margin-top: 30px;
+}
+
+
+.redes-enlaces
+{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+.redes-enlaces a
+{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    background-color: #1a1a1a;
+    color: white;
+    text-decoration: none;
+}
+
+
+.redes-enlaces a:hover
+{
+    background-color: #e10600;
+}
+
+
+.red-social-icono
+{
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+}
+
+
+/* FORMULARIO */
+
+.contacto-campo
+{
+    margin-top: 20px;
+}
+
+
+.contacto-campo label
+{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+
+.contacto-campo input,
+.contacto-campo textarea
+{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+.contacto-campo textarea
+{
+    resize: vertical;
+}
+
+
+#btn-enviar-contacto
+{
+    padding: 10px 18px;
+    border: none;
+    background-color: #1a1a1a;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+#btn-enviar-contacto:hover
+{
+    background-color: #e10600;
+}
+
+#btn-limpiar-contacto
+{
+    padding: 10px 18px;
+    border: none;
+    background-color: #666666;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+#btn-limpiar-contacto:hover
+{
+    background-color: #444444;
+}
+
+@media (max-width: 800px)
+{
+    .contacto-contenedor
+    {
+        flex-direction: column;
+    }
+    .contacto-seccion
+    {
+        width: 100%;
+        box-sizing: border-box;
+    }
 }
