@@ -53,65 +53,6 @@ header
 }
 
 /*  FONDOS */
-.fondo-mclaren
-{
-    background-color: #ffe5c2;
-}
-
-
-.fondo-ferrari
-{
-    background-color: #ffdada;
-}
-
-
-.fondo-redbull
-{
-    background-color: #dce3ff;
-}
-
-
-.fondo-mercedes
-{
-    background-color: #d5f5f2;
-}
-
-
-.fondo-astonmartin
-{
-    background-color: #d9eee9;
-}
-
-
-.fondo-alpine
-{
-    background-color: #dcefff;
-}
-
-
-.fondo-williams
-{
-    background-color: #dbe6ff;
-}
-
-
-.fondo-haas
-{
-    background-color: #e5e5e5;
-}
-
-
-.fondo-racingbulls
-{
-    background-color: #dfe6ff;
-}
-
-
-.fondo-sauber
-{
-    background-color: #dcf8dc;
-}
-
 
 .fondo-ferrari main
 {
@@ -711,65 +652,67 @@ body
 }
 
 
+
+/* ===== EFECTO DE ESCUDERIA EN TODA LA PAGINA MI PERFIL ===== */
 .fondo-mclaren
 {
-    background-color: #fff8ef;
+    background-color: #ffe5c2;
 }
 
 
 .fondo-ferrari
 {
-    background-color: #fff5f5;
+    background-color: #ffdada;
 }
 
 
 .fondo-redbull
 {
-    background-color: #f4f6ff;
+    background-color: #dce3ff;
 }
 
 
 .fondo-mercedes
 {
-    background-color: #f1fbfa;
+    background-color: #d5f5f2;
 }
 
 
 .fondo-astonmartin
 {
-    background-color: #f2f9f7;
+    background-color: #d9eee9;
 }
 
 
 .fondo-alpine
 {
-    background-color: #f3faff;
+    background-color: #dcefff;
 }
 
 
 .fondo-williams
 {
-    background-color: #f3f7ff;
+    background-color: #dbe6ff;
 }
 
 
 .fondo-haas
 {
-    background-color: #f7f7f7;
+    background-color: #e5e5e5;
 }
 
 
 .fondo-racingbulls
 {
-    background-color: #f4f6ff;
+    background-color: #dfe6ff;
 }
 
 
 .fondo-sauber
 {
-    background-color: #f3fff3;
+    background-color: #dcf8dc;
 }
-/* ===== EFECTO DE ESCUDERIA EN TODA LA PAGINA MI PERFIL ===== */
+
 
 .fondo-mclaren .perfil-seccion
 {
@@ -840,7 +783,66 @@ body
     border-top-color: #52e252;
 }
 
+/* ===== COLOR DE ESCUDERIA EN CONTACTO ===== */
 
+.fondo-mclaren .contacto-seccion
+{
+    border-top-color: #ff8000;
+}
+
+
+.fondo-ferrari .contacto-seccion
+{
+    border-top-color: #dc0000;
+}
+
+
+.fondo-redbull .contacto-seccion
+{
+    border-top-color: #1e41ff;
+}
+
+
+.fondo-mercedes .contacto-seccion
+{
+    border-top-color: #00a19c;
+}
+
+
+.fondo-astonmartin .contacto-seccion
+{
+    border-top-color: #006f62;
+}
+
+
+.fondo-alpine .contacto-seccion
+{
+    border-top-color: #2293d1;
+}
+
+
+.fondo-williams .contacto-seccion
+{
+    border-top-color: #005aff;
+}
+
+
+.fondo-haas .contacto-seccion
+{
+    border-top-color: #b6babd;
+}
+
+
+.fondo-racingbulls .contacto-seccion
+{
+    border-top-color: #6692ff;
+}
+
+
+.fondo-sauber .contacto-seccion
+{
+    border-top-color: #52e252;
+}
 
 /* ===== PAGINA CONTACTO ===== */
 
@@ -1013,5 +1015,263 @@ body
     {
         width: 100%;
         box-sizing: border-box;
+    }
+}
+
+/* ===== PAGINA DECADAS ===== */
+
+.decadas-introduccion
+{
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+}
+
+
+.selector-decadas
+{
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.selector-decadas label
+{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+
+.selector-decadas select
+{
+    min-width: 230px;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+.selector-decadas p
+{
+    margin: 0;
+    font-weight: bold;
+}
+
+
+.decada
+{
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-left: 6px solid #e10600;
+}
+
+
+.decada h2
+{
+    margin-top: 0;
+}
+
+
+.opcion-mas-info
+{
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #cccccc;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.opcion-mas-info input
+{
+    cursor: pointer;
+}
+
+
+.opcion-mas-info label
+{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.mas-informacion
+{
+    background-color: #f4f4f4;
+    margin-top: 15px;
+    padding: 20px;
+    border-left: 4px solid #1a1a1a;
+}
+
+
+.mas-informacion p
+{
+    margin: 0;
+}
+.imagen-decada
+{
+    max-width: 520px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+
+.imagen-decada img
+{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.imagen-decada figcaption
+{
+    background-color: #1a1a1a;
+    color: white;
+    padding: 8px;
+    font-size: 0.9rem;
+}
+/* ===== COLOR DE ESCUDERIA EN DECADAS ===== */
+
+.fondo-mclaren .decada
+{
+    border-left-color: #ff8000;
+}
+
+
+.fondo-ferrari .decada
+{
+    border-left-color: #dc0000;
+}
+
+
+.fondo-redbull .decada
+{
+    border-left-color: #1e41ff;
+}
+
+
+.fondo-mercedes .decada
+{
+    border-left-color: #00a19c;
+}
+
+
+.fondo-astonmartin .decada
+{
+    border-left-color: #006f62;
+}
+
+
+.fondo-alpine .decada
+{
+    border-left-color: #2293d1;
+}
+
+
+.fondo-williams .decada
+{
+    border-left-color: #005aff;
+}
+
+
+.fondo-haas .decada
+{
+    border-left-color: #b6babd;
+}
+
+
+.fondo-racingbulls .decada
+{
+    border-left-color: #6692ff;
+}
+
+
+.fondo-sauber .decada
+{
+    border-left-color: #52e252;
+}
+
+.fondo-mclaren .mas-informacion
+{
+    border-left-color: #ff8000;
+}
+
+
+.fondo-ferrari .mas-informacion
+{
+    border-left-color: #dc0000;
+}
+
+
+.fondo-redbull .mas-informacion
+{
+    border-left-color: #1e41ff;
+}
+
+
+.fondo-mercedes .mas-informacion
+{
+    border-left-color: #00a19c;
+}
+
+
+.fondo-astonmartin .mas-informacion
+{
+    border-left-color: #006f62;
+}
+
+
+.fondo-alpine .mas-informacion
+{
+    border-left-color: #2293d1;
+}
+
+
+.fondo-williams .mas-informacion
+{
+    border-left-color: #005aff;
+}
+
+
+.fondo-haas .mas-informacion
+{
+    border-left-color: #b6babd;
+}
+
+
+.fondo-racingbulls .mas-informacion
+{
+    border-left-color: #6692ff;
+}
+
+
+.fondo-sauber .mas-informacion
+{
+    border-left-color: #52e252;
+}
+
+@media (max-width: 700px)
+{
+    .selector-decadas
+    {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+
+    .selector-decadas select
+    {
+        width: 100%;
     }
 }
