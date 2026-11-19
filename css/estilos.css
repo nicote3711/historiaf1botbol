@@ -2894,3 +2894,163 @@ body
         height: auto;
     }
 }
+
+/* ===== CONTADOR PROXIMA CARRERA ===== */
+
+.proxima-carrera
+{
+    margin-top: 20px;
+    margin-bottom: 25px;
+
+    text-align: center;
+}
+
+
+#btn-proxima-carrera
+{
+    background-color: #1a1a1a;
+    color: white;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+#btn-proxima-carrera:hover,
+#btn-proxima-carrera:focus
+{
+    background-color: #333333;
+}
+
+
+.contador-carrera
+{
+    margin-top: 20px;
+
+    padding: 25px;
+
+    background-color: #eeeeee;
+
+    border-top: 5px solid #e10600;
+
+    text-align: center;
+}
+
+
+.contador-carrera h4
+{
+    margin-top: 0;
+    margin-bottom: 8px;
+
+    font-size: 1.4rem;
+}
+
+
+.fecha-proxima-carrera
+{
+    margin-top: 0;
+    margin-bottom: 25px;
+
+    font-weight: bold;
+}
+
+
+/* ===== RELOJ DIGITAL ===== */
+
+.reloj-carrera
+{
+    display: flex;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+}
+
+
+.reloj-carrera div
+{
+    position: relative;
+
+    min-width: 110px;
+
+    background-color: #242424;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+}
+
+
+.reloj-carrera strong
+{
+    display: block;
+
+    padding: 15px 12px;
+
+    color: white;
+
+    font-size: 2.6rem;
+
+    font-family: monospace;
+
+    line-height: 1;
+
+    background-color: #2d2d2d;
+
+    border-bottom: 2px solid #111111;
+}
+
+
+/* Línea horizontal que simula el reloj flip */
+
+.reloj-carrera strong::after
+{
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    top: 38px;
+
+    height: 1px;
+
+    background-color: #111111;
+}
+
+
+.reloj-carrera span
+{
+    display: block;
+
+    padding: 9px;
+
+    background-color: white;
+
+    color: #333333;
+
+    font-size: 0.85rem;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+}
+
+
+#mensaje-proxima-carrera
+{
+    margin-top: 20px;
+    margin-bottom: 0;
+
+    font-weight: bold;
+}

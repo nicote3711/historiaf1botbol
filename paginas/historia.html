@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="../css/estilos.css">
     <script src="../js/perfil-global.js" defer></script>
+    <script src="../js/historia.js" defer></script>
 </head>
 
 
@@ -237,6 +238,51 @@
             <h3 id="historia-moderna-titulo-imagen">
                 Si ya sos todo un fan, acá podés seguir el calendario 2026
             </h3>
+
+            <div class="proxima-carrera">
+
+                <button type="button" id="btn-proxima-carrera">
+                    Ver tiempo hasta la próxima carrera
+                </button>
+
+
+                <div id="contador-carrera" class="contador-carrera" hidden>
+
+                    <h4 id="nombre-proxima-carrera"></h4>
+
+                    <p id="fecha-proxima-carrera" class="fecha-proxima-carrera"></p>
+
+
+                    <div class="reloj-carrera">
+
+                        <div>
+                            <strong id="dias-carrera">00</strong>
+                            <span>Días</span>
+                        </div>
+
+                        <div>
+                            <strong id="horas-carrera">00</strong>
+                            <span>Horas</span>
+                        </div>
+
+                        <div>
+                            <strong id="minutos-carrera">00</strong>
+                            <span>Minutos</span>
+                        </div>
+
+                        <div>
+                            <strong id="segundos-carrera">00</strong>
+                            <span>Segundos</span>
+                        </div>
+
+                    </div>
+
+
+                    <p id="mensaje-proxima-carrera"></p>
+
+                </div>
+
+            </div>
 
             <div id="historia-moderna-imagen">
                 <img
