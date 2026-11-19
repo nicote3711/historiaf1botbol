@@ -6,22 +6,21 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="author"
-          content="Nicolas Botbol">
+    <meta name="author" content="Nicolas Botbol">
 
-    <meta name="description"
-          content="Campeones de la Fórmula 1">
+    <meta name="description" content="Las grandes escuderías de la historia de la Fórmula 1">
 
-    <meta name="keywords"
-          content="Formula 1, F1, campeones, automovilismo">
+    <meta name="keywords" content="Formula 1, F1, Ferrari, Mercedes, Lotus, Brabham, McLaren, Williams, Renault, Red Bull">
 
-    <title>Campeones - Historia F1 Botbol</title>
+    <title>Escuderías - Historia F1 Botbol</title>
 
     <link rel="stylesheet" href="../css/estilos.css">
+
     <script src="../js/perfil-global.js" defer></script>
+    <script src="../js/escuderias.js" defer></script>
+
 </head>
 
 
@@ -29,12 +28,9 @@
 
     <header>
 
-        <h1>Campeones de Fórmula 1</h1>
+        <h1>Grandes escuderías de la Fórmula 1</h1>
 
-        <p>
-            Los pilotos que alcanzaron el máximo reconocimiento
-            de la categoría.
-        </p>
+        <p>Equipos que marcaron diferentes etapas de la historia de la categoría.</p>
 
     </header>
 
@@ -48,9 +44,9 @@
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="historia.html">Historia</a></li>
                 <li><a href="decadas.html">Décadas</a></li>
-                <li><a href="campeones.html" >Campeones</a></li>
+                <li><a href="campeones.html">Campeones</a></li>
                 <li><a href="escuderias.html" class="activo">Escuderías</a></li>
-                <li> <a href="carrerasdestacadas.html"> Carreras destacadas</a></li>
+                <li><a href="carrerasdestacadas.html">Carreras destacadas</a></li>
                 <li><a href="pilotosargentinos.html">Pilotos argentinos</a></li>
                 <li><a href="miperfil.html">Mi perfil</a></li>
                 <li><a href="curiosidades.html">Curiosidades</a></li>
@@ -63,15 +59,219 @@
     </div>
 
 
-    <main>
+    <main class="pagina-escuderias">
 
-        <section class="pagina-en-proceso">
+        <!-- ===== INTRODUCCION ===== -->
 
-            <h2>Sección en desarrollo</h2>
+        <section class="escuderias-introduccion">
+
+            <h2>Equipos que construyeron la historia</h2>
 
             <p>
-                El contenido de esta sección se encuentra en proceso.
+                A lo largo de más de siete décadas, numerosas escuderías participaron
+                del Campeonato Mundial de Fórmula 1. Algunas tuvieron una presencia breve,
+                mientras que otras construyeron verdaderas dinastías deportivas.
             </p>
+
+            <p>
+                En esta sección se presentan ocho equipos seleccionados por su importancia
+                histórica, sus campeonatos, sus innovaciones y la influencia que tuvieron
+                en distintas etapas de la categoría.
+            </p>
+
+            <p>
+                Seleccioná una escudería para conocer su historia y sus principales logros.
+            </p>
+
+        </section>
+
+
+        <!-- ===== SELECTOR DE ESCUDERIAS ===== -->
+
+        <section class="selector-escuderias">
+
+            <button type="button" class="boton-escuderia activo-escuderia" data-indice="0">
+
+                <img src="../img/escuderias-historicas/ferrari.png" alt="Logo de Ferrari">
+
+                <span>Ferrari</span>
+
+            </button>
+
+
+            <button type="button" class="boton-escuderia" data-indice="1">
+
+                <img src="../img/escuderias-historicas/mercedes.png" alt="Logo de Mercedes">
+
+                <span>Mercedes</span>
+
+            </button>
+
+
+            <button type="button" class="boton-escuderia" data-indice="2">
+
+                <img src="../img/escuderias-historicas/lotus.png" alt="Logo de Lotus">
+
+                <span>Lotus</span>
+
+            </button>
+
+
+            <button type="button" class="boton-escuderia" data-indice="3">
+
+                <img src="../img/escuderias-historicas/brabham.png" alt="Logo de Brabham">
+
+                <span>Brabham</span>
+
+            </button>
+
+
+            <button type="button" class="boton-escuderia" data-indice="4">
+
+                <img src="../img/escuderias-historicas/mclaren.png" alt="Logo de McLaren">
+
+                <span>McLaren</span>
+
+            </button>
+
+
+            <button type="button" class="boton-escuderia" data-indice="5">
+
+                <img src="../img/escuderias-historicas/williams.png" alt="Logo de Williams">
+
+                <span>Williams</span>
+
+            </button>
+
+
+            <button type="button" class="boton-escuderia" data-indice="6">
+
+                <img src="../img/escuderias-historicas/renault.png" alt="Logo de Renault">
+
+                <span>Renault</span>
+
+            </button>
+
+
+            <button type="button" class="boton-escuderia" data-indice="7">
+
+                <img src="../img/escuderias-historicas/redbull.png" alt="Logo de Red Bull">
+
+                <span>Red Bull</span>
+
+            </button>
+
+        </section>
+
+
+        <!-- ===== PANEL DINAMICO ===== -->
+
+        <section class="escuderia-panel">
+
+            <div class="escuderia-encabezado">
+
+                <img
+                    id="logo-escuderia"
+                    src="../img/escuderias-historicas/ferrari.png"
+                    alt="Logo de Ferrari">
+
+                <div>
+
+                    <h2 id="nombre-escuderia">Ferrari</h2>
+
+                    <p id="periodo-escuderia" class="periodo-escuderia">
+                        1950 - actualidad
+                    </p>
+
+                    <p id="estado-escuderia" class="estado-escuderia">
+                        Escudería activa
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ===== DATOS ===== -->
+
+            <div class="datos-escuderia">
+
+                <div>
+
+                    <strong>Debut</strong>
+
+                    <span id="debut-escuderia">1950</span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>Constructores</strong>
+
+                    <span id="constructores-escuderia">16 títulos</span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>Pilotos</strong>
+
+                    <span id="pilotos-titulos-escuderia">15 títulos</span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>Pilotos emblemáticos</strong>
+
+                    <span id="pilotos-escuderia">
+                        Ascari · Lauda · Schumacher · Räikkönen
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- ===== HISTORIA ===== -->
+
+            <div class="escuderia-informacion">
+
+                <h3>Historia</h3>
+
+                <p id="historia-escuderia"></p>
+
+            </div>
+
+
+            <!-- ===== LEGADO ===== -->
+
+            <div class="legado-escuderia">
+
+                <strong>Legado destacado</strong>
+
+                <p id="legado-escuderia"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===== INVITACION MI PERFIL ===== -->
+
+        <section class="invitacion-escuderia">
+
+            <p>
+                Si te atrapó la historia de las escuderías, vení genera tu perfil y elegí tu favorita
+                de la categoría actual.
+            </p>
+
+            <a href="miperfil.html" class="boton-elegir-escuderia">
+                Elegir mi escudería favorita
+            </a>
 
         </section>
 
@@ -82,25 +282,18 @@
 
         <div class="footer-izquierda">
 
-            <p>
-                © 2026 - Historia F1 Botbol
-            </p>
+            <p>© 2026 - Historia F1 Botbol</p>
 
-            <address>
-                Sitio desarrollado por Nicolas Botbol
-            </address>
+            <address>Sitio desarrollado por Nicolas Botbol</address>
 
         </div>
 
 
         <div class="footer-derecha">
 
-            <p>
-                Materia: Introducción a la Programación Web
-            </p>
+            <p>Materia: Introducción a la Programación Web</p>
 
-            <a
-                href="https://uai.edu.ar/"target="_blank"rel="noopener noreferrer"title="Sitio oficial de la Universidad Abierta Interamericana">
+            <a href="https://uai.edu.ar/" target="_blank" rel="noopener noreferrer" title="Sitio oficial de la Universidad Abierta Interamericana">
                 <img src="../img/imagen_6.png" alt="Universidad Abierta Interamericana">
             </a>
 

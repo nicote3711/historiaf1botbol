@@ -2330,3 +2330,567 @@ body
         max-width: 100%;
     }
 }
+
+/* ===== PAGINA ESCUDERIAS ===== */
+
+.escuderias-introduccion
+{
+    background-color: white;
+
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+
+.escuderias-introduccion h2
+{
+    margin-top: 0;
+}
+
+
+/* ===== SELECTOR ===== */
+
+.selector-escuderias
+{
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+}
+
+
+.boton-escuderia
+{
+    background-color: white;
+
+    border: 1px solid #cccccc;
+    border-bottom: 5px solid transparent;
+
+    padding: 12px;
+
+    cursor: pointer;
+}
+
+
+.boton-escuderia img
+{
+    width: 100%;
+
+    max-width: 180px;
+    height: 100px;
+
+    object-fit: contain;
+
+    display: block;
+
+    margin: auto;
+}
+
+
+.boton-escuderia span
+{
+    display: block;
+
+    margin-top: 8px;
+
+    font-weight: bold;
+
+    color: #1a1a1a;
+}
+
+
+.boton-escuderia:hover,
+.boton-escuderia:focus
+{
+    background-color: #f4f4f4;
+}
+
+
+.boton-escuderia.activo-escuderia
+{
+    border-bottom-color: #e10600;
+}
+
+
+/* ===== PANEL PRINCIPAL ===== */
+
+.escuderia-panel
+{
+    background-color: white;
+
+    padding: 30px;
+
+    border-left: 6px solid #e10600;
+}
+
+
+.escuderia-encabezado
+{
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    margin-bottom: 30px;
+}
+
+
+.escuderia-encabezado img
+{
+    width: 220px;
+    height: 130px;
+
+    object-fit: contain;
+}
+
+
+.escuderia-encabezado h2
+{
+    margin-top: 0;
+    margin-bottom: 5px;
+
+    font-size: 2rem;
+}
+
+
+.periodo-escuderia
+{
+    margin-top: 0;
+    margin-bottom: 8px;
+
+    font-weight: bold;
+}
+
+
+.estado-escuderia
+{
+    display: inline-block;
+
+    margin: 0;
+
+    padding: 6px 10px;
+
+    background-color: #1a1a1a;
+    color: white;
+}
+
+
+/* ===== DATOS ===== */
+
+.datos-escuderia
+{
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 30px;
+}
+
+
+.datos-escuderia div
+{
+    flex: 1;
+
+    min-width: 180px;
+
+    background-color: #f4f4f4;
+
+    padding: 15px;
+
+    border-top: 4px solid #e10600;
+}
+
+
+.datos-escuderia strong,
+.datos-escuderia span
+{
+    display: block;
+}
+
+
+.datos-escuderia span
+{
+    margin-top: 6px;
+}
+
+
+/* ===== HISTORIA ===== */
+
+.escuderia-informacion
+{
+    margin-top: 20px;
+}
+
+
+.escuderia-informacion h3
+{
+    margin-bottom: 10px;
+}
+
+
+.escuderia-informacion p
+{
+    line-height: 1.6;
+}
+
+
+/* ===== LEGADO ===== */
+
+.legado-escuderia
+{
+    background-color: #f4f4f4;
+
+    margin-top: 25px;
+
+    padding: 20px;
+
+    border-left: 4px solid #e10600;
+}
+
+
+.legado-escuderia strong
+{
+    display: block;
+
+    margin-bottom: 8px;
+}
+
+
+.legado-escuderia p
+{
+    margin: 0;
+
+    line-height: 1.5;
+}
+
+
+/* ===== INVITACION ===== */
+
+.invitacion-escuderia
+{
+    background-color: white;
+
+    margin-top: 30px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-top: 6px solid #e10600;
+}
+
+
+.invitacion-escuderia p
+{
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+.boton-elegir-escuderia
+{
+    display: inline-block;
+
+    background-color: #1a1a1a;
+    color: white;
+
+    padding: 12px 22px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.boton-elegir-escuderia:hover,
+.boton-elegir-escuderia:focus
+{
+    background-color: #333333;
+}
+/* ===== COLOR DE ESCUDERIA DEL PERFIL ===== */
+
+.fondo-mclaren .escuderia-panel,
+.fondo-mclaren .legado-escuderia
+{
+    border-left-color: #ff8000;
+}
+
+
+.fondo-ferrari .escuderia-panel,
+.fondo-ferrari .legado-escuderia
+{
+    border-left-color: #dc0000;
+}
+
+
+.fondo-redbull .escuderia-panel,
+.fondo-redbull .legado-escuderia
+{
+    border-left-color: #1e41ff;
+}
+
+
+.fondo-mercedes .escuderia-panel,
+.fondo-mercedes .legado-escuderia
+{
+    border-left-color: #00a19c;
+}
+
+
+.fondo-astonmartin .escuderia-panel,
+.fondo-astonmartin .legado-escuderia
+{
+    border-left-color: #006f62;
+}
+
+
+.fondo-alpine .escuderia-panel,
+.fondo-alpine .legado-escuderia
+{
+    border-left-color: #2293d1;
+}
+
+
+.fondo-williams .escuderia-panel,
+.fondo-williams .legado-escuderia
+{
+    border-left-color: #005aff;
+}
+
+
+.fondo-haas .escuderia-panel,
+.fondo-haas .legado-escuderia
+{
+    border-left-color: #b6babd;
+}
+
+
+.fondo-racingbulls .escuderia-panel,
+.fondo-racingbulls .legado-escuderia
+{
+    border-left-color: #6692ff;
+}
+
+
+.fondo-sauber .escuderia-panel,
+.fondo-sauber .legado-escuderia
+{
+    border-left-color: #52e252;
+}
+.fondo-mclaren .datos-escuderia div
+{
+    border-top-color: #ff8000;
+}
+
+
+.fondo-ferrari .datos-escuderia div
+{
+    border-top-color: #dc0000;
+}
+
+
+.fondo-redbull .datos-escuderia div
+{
+    border-top-color: #1e41ff;
+}
+
+
+.fondo-mercedes .datos-escuderia div
+{
+    border-top-color: #00a19c;
+}
+
+
+.fondo-astonmartin .datos-escuderia div
+{
+    border-top-color: #006f62;
+}
+
+
+.fondo-alpine .datos-escuderia div
+{
+    border-top-color: #2293d1;
+}
+
+
+.fondo-williams .datos-escuderia div
+{
+    border-top-color: #005aff;
+}
+
+
+.fondo-haas .datos-escuderia div
+{
+    border-top-color: #b6babd;
+}
+
+
+.fondo-racingbulls .datos-escuderia div
+{
+    border-top-color: #6692ff;
+}
+
+
+.fondo-sauber .datos-escuderia div
+{
+    border-top-color: #52e252;
+}
+.fondo-mclaren .boton-escuderia.activo-escuderia
+{
+    border-bottom-color: #ff8000;
+}
+
+
+.fondo-ferrari .boton-escuderia.activo-escuderia
+{
+    border-bottom-color: #dc0000;
+}
+
+
+.fondo-redbull .boton-escuderia.activo-escuderia
+{
+    border-bottom-color: #1e41ff;
+}
+
+
+.fondo-mercedes .boton-escuderia.activo-escuderia
+{
+    border-bottom-color: #00a19c;
+}
+
+
+.fondo-astonmartin .boton-escuderia.activo-escuderia
+{
+    border-bottom-color: #006f62;
+}
+
+
+.fondo-alpine .boton-escuderia.activo-escuderia
+{
+    border-bottom-color: #2293d1;
+}
+
+
+.fondo-williams .boton-escuderia.activo-escuderia
+{
+    border-bottom-color: #005aff;
+}
+
+
+.fondo-haas .boton-escuderia.activo-escuderia
+{
+    border-bottom-color: #b6babd;
+}
+
+
+.fondo-racingbulls .boton-escuderia.activo-escuderia
+{
+    border-bottom-color: #6692ff;
+}
+
+
+.fondo-sauber .boton-escuderia.activo-escuderia
+{
+    border-bottom-color: #52e252;
+}
+.fondo-mclaren .invitacion-escuderia
+{
+    border-top-color: #ff8000;
+}
+
+
+.fondo-ferrari .invitacion-escuderia
+{
+    border-top-color: #dc0000;
+}
+
+
+.fondo-redbull .invitacion-escuderia
+{
+    border-top-color: #1e41ff;
+}
+
+
+.fondo-mercedes .invitacion-escuderia
+{
+    border-top-color: #00a19c;
+}
+
+
+.fondo-astonmartin .invitacion-escuderia
+{
+    border-top-color: #006f62;
+}
+
+
+.fondo-alpine .invitacion-escuderia
+{
+    border-top-color: #2293d1;
+}
+
+
+.fondo-williams .invitacion-escuderia
+{
+    border-top-color: #005aff;
+}
+
+
+.fondo-haas .invitacion-escuderia
+{
+    border-top-color: #b6babd;
+}
+
+
+.fondo-racingbulls .invitacion-escuderia
+{
+    border-top-color: #6692ff;
+}
+
+
+.fondo-sauber .invitacion-escuderia
+{
+    border-top-color: #52e252;
+}
+@media (max-width: 900px)
+{
+    .selector-escuderias
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+@media (max-width: 600px)
+{
+    .selector-escuderias
+    {
+        grid-template-columns: 1fr;
+    }
+
+
+    .escuderia-encabezado
+    {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .escuderia-encabezado img
+    {
+        width: 100%;
+
+        max-width: 300px;
+
+        height: auto;
+    }
+}
