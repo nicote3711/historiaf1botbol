@@ -3,39 +3,27 @@
 <html lang="es">
 
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nicolas Botbol">
+    <meta name="description" content="Carreras memorables y destacadas de la historia de la Fórmula 1">
+    <meta name="keywords" content="Formula 1, F1, carreras destacadas, Senna, Lauda, Schumacher, Verstappen">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <meta name="author"
-          content="Nicolas Botbol">
-
-    <meta name="description"
-          content="Campeones de la Fórmula 1">
-
-    <meta name="keywords"
-          content="Formula 1, F1, campeones, automovilismo">
-
-    <title>Campeones - Historia F1 Botbol</title>
+    <title>Carreras destacadas - Historia F1 Botbol</title>
 
     <link rel="stylesheet" href="../css/estilos.css">
+
     <script src="../js/perfil-global.js" defer></script>
+    <script src="../js/carreras.js" defer></script>
 </head>
 
 
 <body>
 
     <header>
+        <h1>Carreras destacadas</h1>
 
-        <h1>Campeones de Fórmula 1</h1>
-
-        <p>
-            Los pilotos que alcanzaron el máximo reconocimiento
-            de la categoría.
-        </p>
-
+        <p>Grandes Premios que dejaron una marca especial en la historia de la Fórmula 1.</p>
     </header>
 
 
@@ -44,18 +32,16 @@
         <nav class="navegacion-principal">
 
             <ul>
-
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="historia.html">Historia</a></li>
                 <li><a href="decadas.html">Décadas</a></li>
-                <li><a href="campeones.html" >Campeones</a></li>
-                <li><a href="escuderias.html" >Escuderías</a></li>
-                <li> <a href="carrerasdestacadas.html" class="activo"> Carreras destacadas</a></li>
+                <li><a href="campeones.html">Campeones</a></li>
+                <li><a href="escuderias.html">Escuderías</a></li>
+                <li><a href="carrerasdestacadas.html" class="activo">Carreras destacadas</a></li>
                 <li><a href="pilotosargentinos.html">Pilotos argentinos</a></li>
                 <li><a href="miperfil.html">Mi perfil</a></li>
                 <li><a href="curiosidades.html">Curiosidades</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-
             </ul>
 
         </nav>
@@ -63,15 +49,125 @@
     </div>
 
 
-    <main>
+    <main class="pagina-carreras">
 
-        <section class="pagina-en-proceso">
+        <section class="carreras-introduccion">
 
-            <h2>Sección en desarrollo</h2>
+            <h2>Cinco carreras para recordar</h2>
 
             <p>
-                El contenido de esta sección se encuentra en proceso.
+                Algunas carreras trascienden su resultado y quedan asociadas a grandes rivalidades,
+                definiciones de campeonato, accidentes, actuaciones excepcionales o decisiones
+                que modificaron la historia de la categoría.
             </p>
+
+            <p>
+                Elegí una carrera para conocer su historia y acceder al video correspondiente.
+            </p>
+
+        </section>
+
+
+        <section class="selector-carreras">
+
+            <button type="button" class="boton-carrera activo-carrera" data-indice="0">
+                <strong>1976</strong>
+                <span>Alemania</span>
+            </button>
+
+            <button type="button" class="boton-carrera" data-indice="1">
+                <strong>1984</strong>
+                <span>Mónaco</span>
+            </button>
+
+            <button type="button" class="boton-carrera" data-indice="2">
+                <strong>1986</strong>
+                <span>Australia</span>
+            </button>
+
+            <button type="button" class="boton-carrera" data-indice="3">
+                <strong>1996</strong>
+                <span>España</span>
+            </button>
+
+            <button type="button" class="boton-carrera" data-indice="4">
+                <strong>2021</strong>
+                <span>Abu Dabi</span>
+            </button>
+
+        </section>
+
+
+        <section class="carrera-panel">
+
+            <div class="carrera-encabezado">
+
+                <p id="carrera-anio" class="carrera-anio">1976</p>
+
+                <div>
+                    <h2 id="carrera-titulo">Gran Premio de Alemania</h2>
+
+                    <p id="carrera-subtitulo" class="carrera-subtitulo">
+                        El accidente que marcó un campeonato
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="carrera-datos">
+
+                <div>
+                    <strong>Tipo</strong>
+                    <span id="carrera-tipo">Carrera histórica</span>
+                </div>
+
+                <div>
+                    <strong>Protagonistas</strong>
+                    <span id="carrera-protagonistas">Niki Lauda · James Hunt</span>
+                </div>
+
+                <div>
+                    <strong>Momento clave</strong>
+                    <span id="carrera-momento">Accidente y lucha por el campeonato</span>
+                </div>
+
+            </div>
+
+
+            <div class="carrera-contenido">
+
+                <div class="carrera-texto">
+
+                    <p id="carrera-descripcion"></p>
+
+
+                    <div id="carrera-etiquetas" class="carrera-etiquetas"></div>
+
+                </div>
+
+
+                <div class="carrera-video">
+
+                    <iframe
+                        id="video-carrera"
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/pstMyw9jrI4"
+                        title="Gran Premio de Alemania 1976"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
+
+                    <a id="enlace-video-carrera" href="https://www.youtube.com/watch?v=pstMyw9jrI4" target="_blank" rel="noopener noreferrer">
+                        Ver video en YouTube
+                    </a>
+
+                </div>
+
+            </div>
 
         </section>
 
@@ -82,25 +178,18 @@
 
         <div class="footer-izquierda">
 
-            <p>
-                © 2026 - Historia F1 Botbol
-            </p>
+            <p>© 2026 - Historia F1 Botbol</p>
 
-            <address>
-                Sitio desarrollado por Nicolas Botbol
-            </address>
+            <address>Sitio desarrollado por Nicolas Botbol</address>
 
         </div>
 
 
         <div class="footer-derecha">
 
-            <p>
-                Materia: Introducción a la Programación Web
-            </p>
+            <p>Materia: Introducción a la Programación Web</p>
 
-            <a
-                href="https://uai.edu.ar/"target="_blank"rel="noopener noreferrer"title="Sitio oficial de la Universidad Abierta Interamericana">
+            <a href="https://uai.edu.ar/" target="_blank" rel="noopener noreferrer" title="Sitio oficial de la Universidad Abierta Interamericana">
                 <img src="../img/imagen_6.png" alt="Universidad Abierta Interamericana">
             </a>
 
