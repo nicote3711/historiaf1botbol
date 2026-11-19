@@ -417,6 +417,7 @@ function seleccionarPerfil()
         localStorage.removeItem(CLAVE_PERFIL_SELECCIONADO);
 
         desactivarPreferencias();
+        actualizarPerfilGlobal();
         return;
     }
 
@@ -439,6 +440,7 @@ function seleccionarPerfil()
 
 
     aplicarEstiloEscuderia(perfil.escuderiaFavorita);
+    actualizarPerfilGlobal();
 }
 
 
@@ -473,6 +475,7 @@ function eliminarPerfil()
 
     actualizarSelectorPerfiles();
     desactivarPreferencias();
+    actualizarPerfilGlobal();
 
     mostrarMensajePerfil("Perfil eliminado correctamente.");
 }
@@ -546,6 +549,7 @@ function guardarPreferencias()
     perfiles[indicePerfilSeleccionado].escuderiaFavorita = escuderia;
     guardarPerfiles();
     aplicarEstiloEscuderia(escuderia);
+    actualizarPerfilGlobal();
 
 
     document.getElementById("mensaje-preferencias").textContent ="Preferencias guardadas correctamente.";

@@ -66,6 +66,29 @@ const escuderiasGlobal =
 };
 
 
+function cargarFavicon()
+{
+    const favicon = document.createElement("link");
+
+    favicon.rel = "icon";
+    favicon.type = "image/png";
+
+    if (window.location.pathname.endsWith("index.html") || window.location.pathname.endsWith("/"))
+    {
+        favicon.href = "img/favicon.png";
+    }
+    else
+    {
+        favicon.href = "../img/favicon.png";
+    }
+
+    document.head.appendChild(favicon);
+}
+
+
+cargarFavicon();
+
+
 function iniciarPerfilGlobal()
 {
     const perfilesGuardados = localStorage.getItem(CLAVE_PERFILES_GLOBAL);
@@ -145,6 +168,46 @@ function mostrarPerfilGlobal(perfil,logo)
 
     encabezado.appendChild(panelPerfil);
 }
+
+function limpiarPerfilGlobal()
+{
+    const panelPerfil = document.querySelector(".perfil-global");
+
+    if (panelPerfil !== null)
+    {
+        panelPerfil.remove();
+    }
+
+
+    const clasesFondos =
+    [
+        "fondo-mclaren",
+        "fondo-ferrari",
+        "fondo-redbull",
+        "fondo-mercedes",
+        "fondo-astonmartin",
+        "fondo-alpine",
+        "fondo-williams",
+        "fondo-haas",
+        "fondo-racingbulls",
+        "fondo-sauber"
+    ];
+
+
+    for (let i = 0; i < clasesFondos.length; i++)
+    {
+        document.body.classList.remove(clasesFondos[i]);
+    }
+}
+
+
+function actualizarPerfilGlobal()
+{
+    limpiarPerfilGlobal();
+    iniciarPerfilGlobal();
+}
+
+
 
 
 iniciarPerfilGlobal();
