@@ -11,6 +11,10 @@ El sitio presenta un recorrido por la historia de la Fórmula 1 mediante distint
 Universidad Abierta Interamericana  
 Materia: Introducción a la Programación Web
 
+## Dominio publicado
+
+Publicado en github con URL: https://nicote3711.github.io/historiaf1botbol/
+
 ## Tecnologías utilizadas
 
 El proyecto fue desarrollado utilizando:
@@ -186,4 +190,4 @@ El objetivo principal fue integrar en un único proyecto conceptos de:
 - organización y navegación de un sitio web.
 
 Para el diseño de estilos de CSS se uso asistencia en determinadas configuraciones de herramientas como Copilot a fin de generar estilos  visuales mas completos.
-El archivo CSS podría haber sido refactorizando, generando una mayor reutilización de clases pero quedo de forma incremental en la cual fue desarrollando las distintas secciones a medida que avanzaba el curso.
+El archivo CSS podría haber sido refactorizando, generando una mayor reutilización de clases pero quedo de forma incremental en la cual fue desarrollando las distintas secciones a medida que avanzaba el curso. La ultima adicion fue un reloj de cuenta atras, similar al visto en clase para contar el tiempo hasta la siguiente carrera de f1. Si el calendario termino lo informa ya que no hay proxima carrera. 
